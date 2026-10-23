@@ -1,7 +1,20 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { perfumes } from '../data/catalog';
-import { filterPerfumes, parseFilters } from './filters';
+import { filterPerfumes } from './filters';
+import { parseFilters } from './filter-query';
+
+test('busca por marca usa o catálogo recebido, sem depender das marcas de demonstração', () => {
+  const item = { ...perfumes[0], brandId: 'outra-marca' };
+  const brands = [{ id: 'outra-marca', name: 'Laboratório Independente', country: 'BR' }];
+  assert.deepEqual(filterPerfumes([item], parseFilters({ q: 'laboratorio' }), undefined, brands), [item]);
+  assert.equal(filterPerfumes([item], parseFilters({ q: 'casa aurora' }), undefined, brands).length, 0);
+});
+
+test('lista vazia marcada como completa não comprova ausência de notas', () => {
+  const item = { ...perfumes[0], notes: { complete: true } };
+  assert.equal(filterPerfumes([item], parseFilters({ exclude: 'baunilha' })).length, 0);
+});
 
 test('combina categoria, perfil, clima e nota sem perder parâmetros repetidos', () => {
   const f = parseFilters({ accord: ['fresco', 'frutado'], climate: 'calor', note: 'figo' });

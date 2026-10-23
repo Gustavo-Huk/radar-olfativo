@@ -26,9 +26,13 @@ npm start
 
 - `src/app`: páginas e estados de erro/carregamento/404.
 - `src/components`: catálogo compartilhado, cards, navegação e ilustração.
-- `src/data/catalog.ts`: demonstrações, taxonomias e fontes.
+- `src/data/catalog.ts`: ponto de acesso e índices do catálogo validado.
+- `src/data/demo-catalog.ts` e `taxonomy.ts`: registros fictícios e taxonomias separados.
 - `src/types/perfume.ts`: dados com procedência por atributo.
-- `src/lib/filters.ts`: busca e filtros puros.
+- `src/lib/filters.ts`: busca e filtros sem dependência da origem dos dados.
+- `src/lib/filter-query.ts`: leitura, serialização e alternância de filtros na URL.
+- `src/lib/catalog-validation.ts`: integridade de catálogos tipados.
+- `docs/ARQUITETURA.md`: revisão arquitetural, limites e decisões de evolução.
 - `docs/PLANO.md`: arquitetura, recomendador proposto, critérios de aceite e riscos.
 
 Exemplos para validar:
@@ -44,13 +48,13 @@ Os filtros de acordes/notas usam AND. A exclusão exige cadastro completo da lis
 
 O registro npm não resolveu DNS neste ambiente. A instalação normal e a tentativa offline falharam por metadados ausentes no cache. Para verificar esta entrega, `node_modules` usa links locais temporários para as versões já instaladas em outro projeto da máquina, sem modificar esse projeto. Esses links são ignorados pelo versionamento e não são uma estratégia de distribuição.
 
-As versões diretas estão fixadas em `package.json`, mas **ainda não há lockfile nem instalação limpa validada**. Em ambiente com acesso ao npm, remover apenas os links temporários de `node_modules`, executar `npm install`, versionar o lockfile gerado e repetir os checks. Não preparar deploy antes dessa verificação. O projeto não possui repositório Git próprio ou remote configurados nesta sessão.
+As versões diretas estão fixadas em `package.json`, mas **ainda não há lockfile nem instalação limpa validada**. Em ambiente com acesso ao npm, remover apenas os links temporários de `node_modules`, executar `npm install`, versionar o lockfile gerado e repetir os checks. Não preparar deploy antes dessa verificação. O projeto possui Git próprio e remote `origin` para `Gustavo-Huk/radar-olfativo`.
 
 Não há banco, autenticação, APIs externas ou publicação. A documentação do Next instalada localmente foi consultada para as APIs assíncronas de `params` e `searchParams`.
 
 ## Verificação realizada
 
 - `npm run typecheck`: passou.
-- `npm test`: cinco testes passaram (combinações, busca por inspiração/acentos, dados ausentes, contradições e integridade do catálogo).
+- `npm test`: 17 testes de filtros, URLs, dados ausentes e integridade do catálogo.
 - `npm run build`: passou, com oito fichas pré-renderizadas.
 - Preview HTTP: bloqueado pelo ambiente com `listen EPERM 127.0.0.1:3000`; navegação ponta a ponta e inspeção visual mobile/desktop permanecem pendentes. Não houve publicação.
