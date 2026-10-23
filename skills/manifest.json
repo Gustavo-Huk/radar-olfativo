@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "installedAt": "2026-10-23",
+  "sources": [
+    {
+      "id": "addy",
+      "repository": "https://github.com/addyosmani/agent-skills",
+      "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "version": "0.6.13",
+      "license": "MIT",
+      "root": "vendor/addy"
+    },
+    {
+      "id": "impeccable",
+      "repository": "https://github.com/pbakaus/impeccable",
+      "revision": "e3818550d291a5157f309124dc1872d96ec81bf2",
+      "version": "4.7.0",
+      "license": "Apache-2.0",
+      "root": "vendor/impeccable"
+    }
+  ],
+  "skills": [
+    {
+      "name": "incremental-implementation",
+      "source": "addy",
+      "path": "vendor/addy/skills/incremental-implementation",
+      "sharedReferences": "vendor/addy/references"
+    },
+    {
+      "name": "code-review-and-quality",
+      "source": "addy",
+      "path": "vendor/addy/skills/code-review-and-quality",
+      "sharedReferences": "vendor/addy/references"
+    },
+    {
+      "name": "code-simplification",
+      "source": "addy",
+      "path": "vendor/addy/skills/code-simplification",
+      "sharedReferences": "vendor/addy/references"
+    },
+    {
+      "name": "ci-cd-and-automation",
+      "source": "addy",
+      "path": "vendor/addy/skills/ci-cd-and-automation",
+      "sharedReferences": "vendor/addy/references"
+    },
+    {
+      "name": "impeccable",
+      "source": "impeccable",
+      "path": "vendor/impeccable"
+    }
+  ],
+  "files": [
+    {
+      "path": "vendor/impeccable/SKILL.md",
+      "gitBlob": "2768d516a7ca3d060dac4e7d321bc75b42e36365",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/agents/impeccable_asset_producer.toml",
+      "gitBlob": "91eeca4cce0e62881149b094e758f814510649c3",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/agents/impeccable_documenter.toml",
+      "gitBlob": "45203ec73dc5d2509d0bd4f13e0eccbe51b4366e",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/agents/impeccable_finish_reviewer.toml",
+      "gitBlob": "124b0c4e4418308288b731f78d134e28093ade33",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "gitBlob": "469dd2da6512966a110b94e20abd18283d3689e7",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/agents/openai.yaml",
+      "gitBlob": "e86d8a955ee9527dc9acfa70ded41f8c54aea435",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/adapt.md",
+      "gitBlob": "de4631d7e8f14b3c193175b87302b6ccc814e34c",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/adapt.native.md",
+      "gitBlob": "435c40a6f416809d88cef92c09f0331c65fddec8",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/android.md",
+      "gitBlob": "32a5cf7ccfd78afe659f10f80cca6bbb3ef7de69",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/animate.md",
+      "gitBlob": "c8fb9e038bb74a125646b64c49bc39711f63e8f4",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/audit.md",
+      "gitBlob": "13bf0d7c71802a48af4863c08ee3ed898f72c4b2",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/audit.native.md",
+      "gitBlob": "af725765fb65a02375815060fe825da390f2d051",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/bolder.md",
+      "gitBlob": "c11a146b502cb46f6d5ad3f11ba0f6ff75c0e4d7",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/clarify.md",
+      "gitBlob": "4506a31c95e02b2ad918367a0ef4461643d51532",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/colorize.md",
+      "gitBlob": "02fa661efac9229d6e869a20ef8ee928d4b986a0",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/component-review.md",
+      "gitBlob": "a3c35c92999ecde66f53c96fb287d8adaa0e17f3",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/craft-floor.md",
+      "gitBlob": "fd7280103f7ef4b009b38ce58f594c44c0f04caa",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/craft.md",
+      "gitBlob": "dbbc9402c07cdab21f2b6eb69279b8435fecfd7f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/critique.md",
+      "gitBlob": "07ae4a854ede894de3320f42e50743c1ab4681fb",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/degraded/asset-producer.md",
+      "gitBlob": "76f2357b8aaec59fcb77dbc87582e235c3fcb365",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/degraded/documenter.md",
+      "gitBlob": "e9dfb799bcece32233386bf9702bc3141d56d196",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/degraded/finish-reviewer.md",
+      "gitBlob": "06f257d4a97ec7a19726e9b8eea702592bc0fdf8",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/degraded/manual-edit-applier.md",
+      "gitBlob": "ef5095b924623ce04e02188a6790ebd98a273bcd",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/delight.md",
+      "gitBlob": "60a8e83ee48d50901acfa886d3ec4bc72b40ec6f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/distill.md",
+      "gitBlob": "2537473ced43e94d5081b61fdced2a4ff602c885",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/doctor.md",
+      "gitBlob": "6d680a49f238e891fb0af054d0d1899104b3528f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/document.md",
+      "gitBlob": "45721a6f0aabedaa48a7b05a29c2025e6b52dbc2",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/extract.md",
+      "gitBlob": "7c9d009c5a573dd15332b4431f6f0044374d25b7",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/generate.md",
+      "gitBlob": "7fe7a49886003677fdecad79a528f368b13d7f0f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/harden.md",
+      "gitBlob": "894f06127525ae2d802e4d73c345031e6076a68f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/hooks.md",
+      "gitBlob": "2563c5ac51806693d34a659c3d4a06fe6775b0d4",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/init.md",
+      "gitBlob": "fe5422cc811fb8c93989dc9a4ec7b24afbc91a69",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/ios.md",
+      "gitBlob": "c6244dfe32176e5718d86211b7d1eb5601eb0860",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/layout.md",
+      "gitBlob": "aa547c742fc373bc459bdbb7977683441aa48ec0",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/live-setup.md",
+      "gitBlob": "6e10f00f7f2a789da582f38cdaef89de39ead266",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/live.md",
+      "gitBlob": "ce2e9ccafa226f4f7cb49ad5d22d9138d366d7c5",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/mode-operate.md",
+      "gitBlob": "833775ba85f03bf65a4c1b23e39192f7653414e6",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/mode-persuade.md",
+      "gitBlob": "9c152d67064fb8453a7eaa89de20c35fc115b085",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/mode-read.md",
+      "gitBlob": "b30c4c9139e3094bd35c60738decb6109326153f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/new-work.md",
+      "gitBlob": "0c681dded4cf6abc929ca8e67324bbb6bdb649b5",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/onboard.md",
+      "gitBlob": "f2e1c15af24976fbddb6770719fae66172268ff4",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/operate.md",
+      "gitBlob": "524f2c3ae9fa497284e9699f3ca5320cce5d05cf",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/optimize.md",
+      "gitBlob": "a4e55099ff738571c1fc46c66f27b015dc05339e",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/overdrive.md",
+      "gitBlob": "9f8fc8eec3b07156b670a2561d1f74c17ccdd9f2",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/polish.md",
+      "gitBlob": "f93170f773cac058f51e289603aed7575d62a6a2",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/quieter.md",
+      "gitBlob": "61ea5c7027b54ef7354f55d591b6df8e1fc11dd8",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/region-map.md",
+      "gitBlob": "7b7685cf59a7ee8fa9361d4f0b986ec0ba5b48ad",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/routing.md",
+      "gitBlob": "21c12a626e7ef084fa6ed5d03b93b91e3eb122ce",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/shape.md",
+      "gitBlob": "90a74ae813331cbce8fff6beb498ced77970fadf",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/typeset.md",
+      "gitBlob": "683175632928ab5566e517ad6128a07166e095e8",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/reference/visualize.md",
+      "gitBlob": "afb44acced4f2a39de7cbeb200b47d4dcf89486f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/VERSION",
+      "gitBlob": "e8e277f2fab09359482bc93312975016553c59ff",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/command-metadata.json",
+      "gitBlob": "4686bb6deea643493198bff1369bc2958b3909a7",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/data/font-index-failures.json",
+      "gitBlob": "1aca67220413ef163570c75405b444d7a27a32be",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/data/font-index.json",
+      "gitBlob": "9d2029971df232a72ff6584d264c104490521742",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/impeccable",
+      "gitBlob": "8832f3d0f06a3527321236d141a1eb65f7c0470b",
+      "mode": "100755"
+    },
+    {
+      "path": "vendor/impeccable/scripts/impeccable.cmd",
+      "gitBlob": "789a96f4cc9d3e5d5959213eafd89185e1ea5ef7",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/live-browser-dom.js",
+      "gitBlob": "ef1ca8928111080ddb923da14c7827b7396a9e62",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/live-browser-ignores.js",
+      "gitBlob": "1a2912e57a3b2b10a0d961b5dfe568253133fe53",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/live-browser-session.js",
+      "gitBlob": "6871770720d3dd7a284c545e20b97b613635f36f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/live-browser.js",
+      "gitBlob": "53a2d95fa0299743512a0baeb404060f833da25f",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/scripts/modern-screenshot.umd.js",
+      "gitBlob": "a9c5208f6b141d3bafdb8eb843d6fcbdcf23e370",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/skills/incremental-implementation/SKILL.md",
+      "gitBlob": "9c4f49bc841adb3c0f98baaa9eabd435a5b64ef9",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/skills/code-review-and-quality/SKILL.md",
+      "gitBlob": "08209ff2208d2883d48d945f7754c428b77f8d87",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/skills/code-simplification/SKILL.md",
+      "gitBlob": "239b2848489511de30d9e63b0bd183adc4b01347",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/skills/ci-cd-and-automation/SKILL.md",
+      "gitBlob": "118456fcb10225c030769a4fee7815b9c536b0ce",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/references/definition-of-done.md",
+      "gitBlob": "35e39f9e15f6dd0ff4725a6e5cbce7f2aa69064a",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/references/security-checklist.md",
+      "gitBlob": "fc5e29b92c183fa69e0952b61a99761dc48b4c0b",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/references/performance-checklist.md",
+      "gitBlob": "88b6f6a41be7561746c5580137a892583e5f0029",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/addy/LICENSE",
+      "gitBlob": "d67778ada6b9cda6227e9130da182c13e73c8b2e",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/LICENSE",
+      "gitBlob": "bb3f6d23b1f8025514a62a12b51b47d73e3c9aa9",
+      "mode": "100644"
+    },
+    {
+      "path": "vendor/impeccable/NOTICE.md",
+      "gitBlob": "0468271c904ae334cfaf27da6f8df3d5f419a1f0",
+      "mode": "100644"
+    }
+  ]
+}

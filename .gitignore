@@ -5,3 +5,6 @@ node_modules/
 !.env.example
 *.tsbuildinfo
 .DS_Store
+
+# Cópias de skills geradas a partir das fontes versionadas
+.agents/

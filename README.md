@@ -58,3 +58,15 @@ Não há banco, autenticação, APIs externas ou publicação. A documentação 
 - `npm test`: 17 testes de filtros, URLs, dados ausentes e integridade do catálogo.
 - `npm run build`: passou, com oito fichas pré-renderizadas.
 - Preview HTTP: bloqueado pelo ambiente com `listen EPERM 127.0.0.1:3000`; navegação ponta a ponta e inspeção visual mobile/desktop permanecem pendentes. Não houve publicação.
+
+## Skills de desenvolvimento
+
+Cinco skills estão integradas por tarefa no `AGENTS.md`, com fontes oficiais fixadas em `skills/vendor`. Veja `docs/SKILLS.md` para uso, licenças e limites.
+
+```sh
+npm run skills:verify
+npm run skills:test
+npm run skills:install
+```
+
+O último comando instala as cópias em `.agents/skills`; pode precisar ser executado no seu Terminal por causa das permissões desta sessão. Instalar skills não publica o site nem configura deploy.
